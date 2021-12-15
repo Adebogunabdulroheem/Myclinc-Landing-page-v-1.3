@@ -1,0 +1,110 @@
+/* -----------------------
+:: 5.0 Header Area CSS
+----------------------- */
+
+.header_area {
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+}
+
+.main_header_area {
+    width: 100%;
+    @include trans-duration(500ms);
+}
+
+.is-sticky {
+    .main_header_area {
+        box-shadow: 0 8px 50px 8px rgba(47, 91, 234, 0.175);
+        z-index: 10000 !important;
+        background-color: $white-color;
+        width: 100% !important;
+    }
+}
+
+.classy-nav-container {
+    background-color: transparent;
+    width: 100%;
+
+    a:hover,
+    a:focus {
+        @extend %p_color;
+    }
+
+    .classy-navbar {
+        height: 90px;
+
+        .classynav ul li {
+            a {
+                padding: 32px 15px;
+                height: auto;
+                line-height: 1;
+
+                @media #{$breakpoint-md} {
+                    padding: 15px;
+                }
+
+                @media #{$breakpoint-xs} {
+                    padding: 15px;
+                }
+            }
+
+            .megamenu {
+                box-shadow: 0 8px 50px 8px rgba(47, 91, 234, 0.175);
+
+                a {
+                    padding: 15px;
+                }
+            }
+
+            .dropdown {
+                width: 240px;
+                box-shadow: 0 8px 50px 8px rgba(47, 91, 234, 0.175);
+
+                @media #{$breakpoint-md} {
+                    width: 100%;
+                }
+
+                @media #{$breakpoint-xs} {
+                    width: 100%;
+                }
+
+                a {
+                    padding: 15px 25px;
+                }
+            }
+        }
+
+        @media #{$breakpoint-xs} {
+            height: 70px;
+        }
+    }
+}
+
+.classynav ul li .megamenu .single-mega .title {
+    margin-bottom: 0.8rem;
+}
+
+.login-btn-area {
+    .btn {
+        color: $white-color;
+    }
+}
+
+.classynav ul li.megamenu-item > a:hover::after {
+    @include transform(rotate(180deg));
+}
+
+.breakpoint-off .classynav ul li .dropdown {
+    border-radius: 6px;
+    width: 200px;
+}
+
+.breakpoint-on .classynav ul li ul li a {
+    padding: 0 25px;
+}
+
+.breakpoint-on .classynav ul li.has-down.active > .dd-trigger,
+.breakpoint-on .classynav ul li.megamenu-item.active > .dd-trigger {
+    background-color: $bg-default;
+}

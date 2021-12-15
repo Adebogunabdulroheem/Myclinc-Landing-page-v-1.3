@@ -1,0 +1,19 @@
+/* ---------------------------
+:: 29.0 Chattagram Version CSS
+--------------------------- */
+
+.apland-chattagram-version {
+    .welcome_area {
+        background-color: $bg-default;
+
+        .welcome_text_area {
+            h2 {
+                color: $white-color;
+            }
+
+            h5 {
+                color: rgba(255, 255, 255, 0.7);
+            }
+        }
+    }
+}

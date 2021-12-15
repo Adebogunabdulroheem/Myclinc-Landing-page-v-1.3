@@ -1,0 +1,29 @@
+/* --------------------------
+:: 14.0 Screenshots Area CSS
+-------------------------- */
+
+.app_screenshots .owl-item .single_screenshot,
+.app_screenshots_area,
+.app_screenshots {
+    position: relative;
+    z-index: 1;
+}
+
+.single_screenshot {
+    opacity: 0.5;
+    @include transform(scale(0.85));
+}
+
+.center .single_screenshot {
+    opacity: 1;
+    @include transform(scale(1));
+}
+
+.app_screenshots_area {
+    padding: 0 50px;
+}
+
+.organize-your-sales-thumb img {
+    border-radius: 6px 6px 0 0;
+    box-shadow: 0 6px 50px 8px rgba(21, 131, 233, 0.15);
+}

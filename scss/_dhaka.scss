@@ -1,0 +1,32 @@
+/* -----------------------
+:: 31.0 Dhaka Version CSS
+----------------------- */
+
+.apland-dhaka-version {
+    .dhaka-side-image {
+        position: absolute;
+        z-index: 1;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+
+        @media #{$breakpoint-xs} {
+            display: none;
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 150%;
+            height: 150%;
+            top: -15%;
+            left: -122%;
+            background-color: $gray-color;
+            z-index: -1;
+            @include transform(rotate(-15deg));
+        }
+    }
+}

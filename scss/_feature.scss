@@ -1,0 +1,87 @@
+/* -----------------------
+:: 8.0 Features Area CSS
+----------------------- */
+
+.using_benefits_area {
+    position: relative;
+    z-index: 1;
+    background-color: $heading-color;
+}
+
+.single_benifits {
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
+    @include trans-duration(500ms);
+
+    .icon_box {
+        @include flex(0 0 70px);
+        max-width: 70px;
+        width: 70px;
+        height: 70px;
+        font-size: 2rem;
+        @include trans-duration(500ms);
+        margin-right: 30px;
+        background-color: $bg-default;
+        color: $white-color;
+        text-align: center;
+        line-height: 70px;
+        border-radius: 50%;
+        margin-top: 2px;
+    }
+
+    h5 {
+        @include trans-duration(500ms);
+        color: $white-color;
+    }
+
+    p {
+        margin-bottom: 0;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    a {
+        display: block;
+        margin-top: 8px;
+        color: rgba(255, 255, 255, 0.6);
+
+        &:hover,
+        &:focus {
+            color: $bg-default;
+        }
+    }
+
+    .single_benifits_text {
+        h6 {
+            @include trans-duration(500ms);
+            font-size: 20px;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: $text-color;
+        }
+    }
+
+    &:hover,
+    &:focus {
+        h5 {
+            color: $bg-default;
+        }
+
+        .single_benifits_text {
+            h6 {
+                color: $bg-default;
+            }
+        }
+    }
+}
+
+.main_features_area .single_benifits {
+    &:last-child {
+        margin-bottom: 0;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+}

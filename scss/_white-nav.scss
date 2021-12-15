@@ -1,0 +1,68 @@
+/* -----------------------
+:: 30.0 White Nav CSS
+----------------------- */
+
+.header_area {
+    &.white-nav {
+
+        .is-sticky {
+            .main_header_area {
+                background-color: $heading-color;
+            }
+        }
+
+        .classy-nav-container a {
+            color: $white-color;
+
+            &:hover,
+            &:focus {
+                color: rgba(255, 255, 255, 0.7);
+            }
+
+            @media #{$breakpoint-md} {
+                color: $heading-color;
+
+                &:hover,
+                &:focus {
+                    color: $bg-default;
+                }
+            }
+
+            @media #{$breakpoint-xs} {
+                color: $heading-color;
+
+                &:hover,
+                &:focus {
+                    color: $bg-default;
+                }
+            }
+        }
+
+        .classynav ul li ul li a {
+            color: $heading-color;
+
+            &:hover,
+            &:focus {
+                color: $bg-default;
+            }
+        }
+
+        .classynav ul li.has-down > a::after,
+        .classynav ul li.megamenu-item > a::after {
+            color: $white-color;
+        }
+
+        .login-btn-area .btn {
+            color: $bg-default;
+
+            &:hover,
+            &:focus {
+                color: $white-color;
+            }
+        }
+
+        .classy-navbar-toggler .navbarToggler span {
+            background-color: $white-color;
+        }
+    }
+}

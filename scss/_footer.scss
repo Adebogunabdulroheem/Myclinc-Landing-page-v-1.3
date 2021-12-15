@@ -1,0 +1,86 @@
+/* -----------------------
+:: 20.0 Footer Area CSS
+----------------------- */
+
+.footer_menu {
+    a {
+        font-weight: 300;
+        padding: 0 15px;
+        border-right: 1px solid #757575;
+    }
+
+    ul {
+        li {
+            display: inline-block;
+
+            &:last-child {
+                a {
+                    border-right: none;
+                }
+            }
+        }
+    }
+}
+
+.footer_copywrite_area {
+    display: block;
+    padding: 30px 0 100px 0;
+    background-color: $gray-color;
+}
+
+.footer_social_area {
+    margin-bottom: 30px;
+
+    a {
+        border-radius: 50%;
+        height: 40px;
+        text-align: center;
+        width: 40px;
+        display: inline-block;
+        background-color: $white-color;
+        line-height: 40px;
+        box-shadow: none;
+        margin: 0 5px;
+
+        i {
+            line-height: 36px;
+        }
+
+        &:hover,
+        &:focus {
+            @extend %p_bg_color;
+            color: $white-color;
+        }
+    }
+}
+
+.footer_bottom_area {
+    background-color: $gray-color;
+    display: block;
+    position: relative;
+    text-align: center;
+
+    .item {
+        margin-bottom: 50px;
+    }
+}
+
+.footer_bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.tooltip-inner {
+    @extend %p_bg_color;
+}
+
+.arrow::before {
+    @extend %p_bt_color;
+}
+
+.footer_bottom p i,
+.footer_bottom a,
+.footer_menu a:hover,
+.single_footer_area a:hover {
+    @extend %p_color;
+}

@@ -1,0 +1,17 @@
+/* -----------------------
+:: 17.0 FAQ Area CSS
+----------------------- */
+
+.faq_area {
+    background-color: $gray-color;
+}
+
+.single_faq_area {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 3rem;
+
+    p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,261 @@
+/* -----------------------
+:: 7.0 About Area CSS
+----------------------- */
+
+.single_about_part {
+    position: relative;
+    z-index: 1;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    padding: 30px 40px 30px 30px;
+    text-align: center;
+    @include trans-duration(500ms);
+    background-color: $gray-color;
+    overflow: hidden;
+
+    h6 {
+        @include trans-duration(500ms);
+        margin-bottom: 0.8rem;
+    }
+
+    p {
+        margin-bottom: 0;
+        @include trans-duration(500ms);
+    }
+
+    .feature_icon {
+        @include trans-duration(500ms);
+        width: 50px;
+        height: auto;
+        font-size: 3rem;
+        text-align: center;
+        line-height: 50px;
+        color: $heading-color;
+        margin: 0 auto 1rem;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $heading-color;
+
+        .feature_icon,
+        h6,
+        p {
+            color: $white-color;
+        }
+    }
+}
+
+.about_product_discription .col-12:last-of-type .single_about_part {
+    margin-bottom: 0;
+}
+
+/* -----------------------
+:: 10.0 About Apps Area CSS
+----------------------- */
+
+.about_image {
+    display: block;
+    position: relative;
+    z-index: 1;
+
+    .big_thumb {
+        @media #{$breakpoint-xs} {
+            width: 80%;
+        }
+    }
+
+    .small_thumb {
+        bottom: 0;
+        height: auto;
+        left: 170px;
+        position: absolute;
+        width: auto;
+        z-index: -5;
+    }
+}
+
+.about_us_text_area {
+    padding-top: 100px;
+
+    h3 {
+        font-size: 2rem;
+        line-height: 1.3;
+        margin-bottom: 20px;
+
+        @media #{$breakpoint-lg} {
+            font-size: 1.7rem;
+        }
+
+        @media #{$breakpoint-md} {
+            font-size: 1.7rem;
+        }
+
+        @media #{$breakpoint-xs} {
+            font-size: 1.4rem;
+        }
+
+        @media #{$breakpoint-sm} {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+/* -----------------------
+:: 24.0 About Us Page CSS
+----------------------- */
+
+.about-us-area {
+    position: relative;
+    z-index: 1;
+
+    .about-us-content {
+        h6 {
+            color: $bg-default;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+
+            @media #{$breakpoint-md} {
+                font-size: 2.5rem;
+            }
+
+            @media #{$breakpoint-xs} {
+                font-size: 2rem;
+            }
+        }
+
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .about-us-thumbnail {
+        position: relative;
+        z-index: 1;
+
+        img {
+            border-radius: 20px;
+        }
+
+        &.third-img {
+            width: 60%;
+            margin-left: auto;
+        }
+
+        &.second-img {
+            width: 60%;
+            margin-right: auto;
+        }
+    }
+}
+
+.single-service-area {
+    position: relative;
+    z-index: 1;
+
+    i {
+        @include trans-duration(500ms);
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: $heading-color;
+        margin-bottom: 15px;
+        color: $white-color;
+        display: block;
+        font-size: 2rem;
+        text-align: center;
+        line-height: 60px;
+    }
+
+    &:hover,
+    &:focus {
+        i {
+            background-color: $bg-default;
+        }
+    }
+}
+
+.cta-area {
+    position: relative;
+    z-index: 1;
+    background-color: $heading-color;
+
+    .cta-content {
+        h3 {
+            font-size: 2.5rem;
+            color: $white-color;
+            margin-bottom: 0;
+
+            @media #{$breakpoint-md} {
+                font-size: 2rem;
+            }
+
+            @media #{$breakpoint-xs} {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+.contact-content {
+    h6 {
+        color: $bg-default;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+
+        @media #{$breakpoint-md} {
+            font-size: 2.2rem;
+        }
+
+        @media #{$breakpoint-xs} {
+            font-size: 2rem;
+        }
+    }
+
+    p {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.contact-area {
+    position: relative;
+    z-index: 1;
+
+    .contact_from {
+        .form-control {
+            margin-bottom: 30px;
+            width: 100%;
+            height: 50px;
+            padding: 20px;
+            border: 1px solid $border-color;
+            font-size: 13px;
+            font-style: italic;
+            background-color: $gray-color;
+
+            &:focus {
+                box-shadow: none;
+                border: 1px solid $heading-color;
+            }
+        }
+
+        textarea.form-control {
+            height: 150px;
+        }
+    }
+}
